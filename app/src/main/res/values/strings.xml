@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Planner</string>
+
+
+    <string name="title_activity_list_task">Main</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="all_tab">All</string>
+    <string name="work_tab">Work</string>
+    <string name="family_tab">Family</string>
+</resources>

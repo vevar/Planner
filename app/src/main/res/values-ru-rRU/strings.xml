@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Planner</string>
+    <string name="family_tab">Семья</string>
+    <string name="all_tab">Все</string>
+    <string name="work_tab">Работа</string>
+</resources>
