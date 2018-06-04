@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Dimens of list of task-->
+    <dimen name="list_time_W">40dp</dimen>
+    <dimen name="separator_line">1dp</dimen>
+    <!--Block at list-->
+    <dimen name="block_height">40dp</dimen>
+</resources>

@@ -3,10 +3,36 @@
 
 
     <string name="title_activity_list_task">Main</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
 
     <string name="all_tab">All</string>
     <string name="work_tab">Work</string>
     <string name="family_tab">Family</string>
+
+    <!--Time for list of tasks-->
+    <string name="time_0_00">0:00</string>
+    <string name="time_1_00">1:00</string>
+    <string name="time_2_00">2:00</string>
+    <string name="time_3_00">3:00</string>
+    <string name="time_4_00">4:00</string>
+    <string name="time_5_00">5:00</string>
+    <string name="time_6_00">6:00</string>
+    <string name="time_7_00">7:00</string>
+    <string name="time_8_00">8:00</string>
+    <string name="time_9_00">9:00</string>
+    <string name="time_10_00">10:00</string>
+    <string name="time_11_00">11:00</string>
+    <string name="time_12_00">12:00</string>
+    <string name="time_13_00">13:00</string>
+    <string name="time_14_00">14:00</string>
+    <string name="time_15_00">15:00</string>
+    <string name="time_16_00">16:00</string>
+    <string name="time_17_00">17:00</string>
+    <string name="time_18_00">18:00</string>
+    <string name="time_19_00">19:00</string>
+    <string name="time_20_00">20:00</string>
+    <string name="time_21_00">21:00</string>
+    <string name="time_22_00">22:00</string>
+    <string name="time_23_00">23:00</string>
+
+
 </resources>
