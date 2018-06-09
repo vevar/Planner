@@ -1,442 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ListTaskActivity">
 
     <ScrollView
+        android:id="@+id/time_scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:ignore="ScrollViewCount">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:id="@+id/day_markup"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/background"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
 
             <LinearLayout
+                android:id="@+id/day_markup"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height">
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_0_00"
-                    android:textColor="@color/black_overlay" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_1_00"
-                    android:textColor="@color/black_overlay" />
-
-                <View
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay" />
+                    android:layout_height="@dimen/block_height">
 
-            </LinearLayout>
+                    <TextView
+                        android:layout_width="@dimen/list_time_W"
+                        android:layout_height="wrap_content"
+                        android:text="@string/time_0_00"
+                        android:textColor="@color/black_overlay" />
+                </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_2_00"
-                    android:textColor="@color/black_overlay" />
-
-                <View
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay" />
+                    android:layout_height="@dimen/block_height"
+                    android:orientation="horizontal">
 
-            </LinearLayout>
+                    <TextView
+                        android:layout_width="@dimen/list_time_W"
+                        android:layout_height="wrap_content"
+                        android:text="@string/time_1_00"
+                        android:textColor="@color/black_overlay" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/separator_line"
+                        android:background="@color/black_overlay" />
 
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_3_00"
-                    android:textColor="@color/black_overlay" />
+                </LinearLayout>
 
-                <View
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay" />
+                    android:layout_height="@dimen/block_height"
+                    android:orientation="horizontal">
 
-            </LinearLayout>
+                    <TextView
+                        android:layout_width="@dimen/list_time_W"
+                        android:layout_height="wrap_content"
+                        android:text="@string/time_2_00"
+                        android:textColor="@color/black_overlay" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/separator_line"
+                        android:background="@color/black_overlay" />
 
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_4_00"
-                    android:textColor="@color/black_overlay" />
+                </LinearLayout>
 
-                <View
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay" />
+                    android:layout_height="@dimen/block_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/list_time_W"
+                        android:layout_height="wrap_content"
+                        android:text="@string/time_3_00"
+                        android:textColor="@color/black_overlay" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/separator_line"
+                        android:background="@color/black_overlay" />
+
+                </LinearLayout>
+
 
             </LinearLayout>
 
-            <LinearLayout
+            <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_5_00"
-                    android:textColor="@color/black_overlay" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay" />
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_6_00"
-                    android:textColor="@color/black_overlay" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_7_00"
-                    android:textColor="@color/black_overlay" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_8_00"
-                    android:textColor="@color/black_overlay" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_9_00"
-                    android:textColor="@color/black_overlay" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_10_00"
-                    android:textColor="@color/black_overlay" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_11_00"
-                    android:textColor="@color/black_overlay" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_12_00"
-                    android:textColor="@color/black_overlay" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_13_00"
-                    android:textColor="@color/black_overlay" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_14_00"
-                    android:textColor="@color/black_overlay" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_15_00"
-                    android:textColor="@color/black_overlay" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_16_00"
-                    android:textColor="@color/black_overlay" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_17_00"
-                    android:textColor="@color/black_overlay" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_18_00"
-                    android:textColor="@color/black_overlay" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_19_00"
-                    android:textColor="@color/black_overlay" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_20_00"
-                    android:textColor="@color/black_overlay" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_21_00"
-                    android:textColor="@color/black_overlay" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_22_00"
-                    android:textColor="@color/black_overlay" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/block_height"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="@dimen/list_time_W"
-                    android:layout_height="wrap_content"
-                    android:text="@string/time_23_00"
-                    android:textColor="@color/black_overlay" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/separator_line"
-                    android:background="@color/black_overlay"/>
-
-            </LinearLayout>
-        </LinearLayout>
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/list_time_W">
+
+                <fragment
+                    android:id="@+id/Task1"
+                    android:name="com.example.android.planner.TimeTaskFragment"
+                    android:layout_width="166dp"
+                    android:layout_height="46dp"
+                    tools:layout="@layout/fragment_time_task" />
+
+                <fragment
+                    android:id="@+id/Task2"
+                    android:name="com.example.android.planner.TimeTaskFragment"
+                    android:layout_width="109dp"
+                    android:layout_height="74dp"
+                    tools:layout="@layout/fragment_time_task"
+                    tools:layout_editor_absoluteX="110dp"
+                    tools:layout_editor_absoluteY="11dp" />
+
+                <fragment
+                    android:id="@+id/Task3"
+                    android:name="com.example.android.planner.TimeTaskFragment"
+                    android:layout_width="158dp"
+                    android:layout_height="69dp"
+                    tools:layout="@layout/fragment_time_task"
+                    tools:layout_editor_absoluteX="219dp"
+                    tools:layout_editor_absoluteY="16dp" />
+            </TableLayout>
+
+        </FrameLayout>
 
 
     </ScrollView>

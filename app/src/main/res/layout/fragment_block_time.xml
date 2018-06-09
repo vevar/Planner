@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlockTimeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/block_height"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:tag="list_task_time"
+            android:layout_width="@dimen/list_time_W"
+            android:layout_height="wrap_content"
+            android:text="@string/time_1_00"
+            android:textColor="@color/black_overlay"
+            android:paddingStart="4dp"
+            tools:ignore="RtlSymmetry" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/separator_line"
+            android:background="@color/black_overlay" />
+
+    </LinearLayout>
+
+</FrameLayout>
