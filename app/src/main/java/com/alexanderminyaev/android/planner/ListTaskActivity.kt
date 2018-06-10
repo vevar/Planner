@@ -1,4 +1,4 @@
-package com.example.android.planner
+package com.alexanderminyaev.android.planner
 
 import android.annotation.SuppressLint
 import android.app.FragmentManager
@@ -6,22 +6,21 @@ import android.app.FragmentTransaction
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.RelativeLayout
-import android.widget.Toast
 
 
 class ListTaskActivity : AppCompatActivity() {
-    //TODO What is it?
     //TODO Make add task to RelativeLayout
     @SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         createTimeList()
+
         setContentView(R.layout.activity_list_task)
+
         val relativeLayout = findViewById<RelativeLayout>(R.id.forTimeTask)
         relativeLayout.setOnTouchListener { v, m ->
-            Toast.makeText(applicationContext, " X:${m.x} Y: ${m.y}",
-                    Toast.LENGTH_SHORT).show()
+            addTaskToList(m.x, m.y)
             true
         }
 
@@ -41,5 +40,14 @@ class ListTaskActivity : AppCompatActivity() {
 
         transaction.commit()
     }
+
+    private fun addTaskToList(x : Float, y : Float){
+        val blockBackSizeHeight : Int = R.dimen.background_block_height
+        var timeStart : Float = y % blockBackSizeHeight
+        val newTaskFragment : TimeTaskFragment = TimeTaskFragment()
+
+    }
+
+
 
 }
